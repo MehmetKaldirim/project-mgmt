@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import NewProject from "./components/NewProject.jsx";
 import NoProjectSelected from "./components/NoProjectSelected.jsx";
 import ProjectsSidebar from "./components/ProjectsSidebar.jsx";
@@ -28,7 +29,7 @@ function App() {
       return {
         ...prevState,
         selectedProjectId: undefined,
-        projets: [...prevState.projects, newProject],
+        projects: [...prevState.projects, newProject],
       };
     });
   }
